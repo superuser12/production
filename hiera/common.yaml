@@ -1,0 +1,16 @@
+# ~/example.domain.com-inf/puppet/hiera/common.yaml
+---
+users_common:
+  {username}:
+    ensure: present
+    uid: 500
+    groups:
+      - sudo
+    comment: {your name}
+    managehome: true
+    password: '$6$W5WEZw5fi32$ybEV9BMJTp8VL69IVUpspquTh/.P3cyX9lU5E6ZJQsk6mRoA6EQ07f8nSaD1AXv3kCw4QV.QUqhO4xqnamtIv.'
+    shell:  /bin/bash
+    ssh_authorized_keys:
+      userkey:
+        type: 'ssh-rsa'
+        key:  'AAAAB3NzaC1yc2EAAAADAQABAAABAQDHmAkeK4a2+AyqaeA56QW6SHyYkaorni4zIN2Ialc496nMPazDJJxRdjzV/GTN1cz70aGHE2eX2s2DlFxsFsGFqN8wep+08DoXjbDtEiS5S8QhaKWfnigUf7V2jopUIhaN8BI5W6Qw0WE76g0PPs1Yvcw8RgdtyZF/ztAQre2wsuUIyzq4SSiLD37HqNSWGrUdK5LdbT17vIkk188zDkRkuXvpx8BMAhR0LdNtJzM6g7dTqMoGDvYbavMoxr2yEGQi9YEsVW8CZd1Yk3StJiEs32AaRJ+nhKJmiHfYAuqnXJVA4QMcCoIe3y7N2Qian3f9qpDks9Lao+5T5YKuMTV9 localadmin@puppet-master'
