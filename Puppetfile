@@ -1,4 +1,7 @@
-mod 'puppetlabs/apache'
-mod 'puppetlabs/ntp', :latest
-mod 'puppetlabs/stdlib', '0.10.0
-this is jatttt
+# ~/example.domain.com-inf/puppet/Puppetfile
+forge "http://forge.puppetlabs.com"
+mod 'mthibaut/users'
+mod 'puppetlabs/concat'
+mod 'puppetlabs/firewall'
+mod 'puppetlabs/stdlib'
+mod 'saz/locales'
